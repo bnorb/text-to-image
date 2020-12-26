@@ -6,11 +6,20 @@ export interface GenerateOptions {
   lineHeight?: number;
   textAlign?: 'left' | 'right' | 'center' | 'justify' | 'initial' | 'inherit';
   margin?: number;
-  bgColor?: string;
+  bgColor?: string | null;
   textColor?: string;
+  highlightColor?: string;
   customHeight?: number;
   debug?: boolean;
   debugFilename?: string;
+  localFontName?: string;
+  localFontPath?: string;
+  offsetX?: number;
+  offsetY?: number;
+  strokeColor?: string;
+  lineWidth?: number;
+  maxHeight?: number;
+  lineHeightRatio?: number;
 }
 
 export function generate(
